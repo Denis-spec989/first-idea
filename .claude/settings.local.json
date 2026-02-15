@@ -16,7 +16,8 @@
       "mcp__postgres__list_tables",
       "mcp__postgres__execute_dml_ddl_dcl_tcl",
       "mcp__postgres__execute_commit",
-      "mcp__postgres__execute_query"
+      "mcp__postgres__execute_query",
+      "Bash(cmd.exe /c \"mvnw.cmd test\")"
     ]
   },
   "enableAllProjectMcpServers": true,

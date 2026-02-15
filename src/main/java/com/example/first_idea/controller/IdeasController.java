@@ -18,5 +18,13 @@ public class IdeasController {
     @PostMapping
     public void createIdea(@RequestBody IdeaRequest request) {
         log.info("Received idea request: ideaName={}, ideaRate={}", request.ideaName(), request.ideaRate());
+        log.info("Starting 10 second pause...");
+        try {
+            Thread.sleep(10_000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            log.warn("Pause was interrupted", e);
+        }
+        log.info("Pause finished, idea created");
     }
 }
