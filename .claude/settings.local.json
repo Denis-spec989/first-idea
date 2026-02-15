@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd.exe /c \"mvnw.cmd spring-boot:run\")",
+      "Bash(./mvnw spring-boot:run:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}
