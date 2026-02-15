@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "postgres": {
+      "type": "stdio",
+      "command": "mcp-postgres-full-access",
+      "args": [
+        "postgresql://postgres:postgres@localhost:5432/ideas_db"
+      ]
+    }
+  }
+}

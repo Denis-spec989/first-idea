@@ -10,7 +10,17 @@
       "Bash(./mvnw dependency:tree:*)",
       "Bash(jar tf:*)",
       "Bash(python3:*)",
-      "Bash(unzip:*)"
+      "Bash(unzip:*)",
+      "Bash(claude mcp add:*)",
+      "mcp__postgres__query",
+      "mcp__postgres__list_tables",
+      "mcp__postgres__execute_dml_ddl_dcl_tcl",
+      "mcp__postgres__execute_commit",
+      "mcp__postgres__execute_query"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "postgres"
+  ]
 }
