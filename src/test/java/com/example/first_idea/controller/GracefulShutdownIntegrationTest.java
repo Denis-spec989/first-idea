@@ -9,6 +9,7 @@ import org.springframework.boot.test.system.OutputCaptureExtension;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.boot.web.server.WebServer;
 import org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext;
+import org.springframework.test.annotation.DirtiesContext;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -22,6 +23,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ExtendWith(OutputCaptureExtension.class)
+@DirtiesContext
 class GracefulShutdownIntegrationTest {
 
     @Autowired

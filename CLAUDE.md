@@ -34,3 +34,7 @@ On Windows, use `mvnw.cmd` instead of `./mvnw`.
 - **Static assets**: `src/main/resources/static/`
 - **Templates**: `src/main/resources/templates/`
 - **Config**: `src/main/resources/application.properties`
+
+## Rules
+
+- Always use the Context7 MCP server (`resolve-library-id` then `query-docs`) to look up documentation before writing or modifying code. This ensures code relies on up-to-date APIs and best practices rather than potentially outdated training data.
